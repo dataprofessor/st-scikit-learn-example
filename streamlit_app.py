@@ -38,17 +38,20 @@ def model_performance():
   return train_r2, test_r2, train_mse, test_mse
 
 X, y = load_data()
-X_train, X_test, y_train, y_test = preprocess_data()
-y_train_pred, y_test_pred = model_building()
-train_r2, test_r2, train_mse, test_mse = model_performance()
+#X_train, X_test, y_train, y_test = preprocess_data()
+#y_train_pred, y_test_pred = model_building()
+#train_r2, test_r2, train_mse, test_mse = model_performance()
 
 st.title('🤖 Scikit-learn - A minimum working example')
 
 st.write('Actual y')
-st.write(y_train)
+#st.write(y_train)
 
 st.write('Predicted y')
-st.write(y_train_pred)
+#st.write(y_train_pred)
 
+st.write(X)
+
+st.write(y)
 st.write('Train $R^2$', train_r2)
 st.write('Test $R^2$', test_r2)

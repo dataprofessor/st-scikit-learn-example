@@ -16,7 +16,8 @@ def load_data():
 @st.cache_data
 def preprocess_data():
   # Data splitting
-  return X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+  X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+  return X_train, X_test, y_train, y_test
 
 @st.cache_data
 def model_building():

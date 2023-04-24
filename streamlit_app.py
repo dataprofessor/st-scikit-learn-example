@@ -57,6 +57,6 @@ with col2:
   st.write(y_train_pred)
 
 with col3:
-  st.header('Model performance metrics')
+  st.header('Performance')
   st.write('Train $R^2$', train_r2)
   st.write('Test $R^2$', test_r2)

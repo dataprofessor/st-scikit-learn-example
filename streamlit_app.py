@@ -45,14 +45,15 @@ train_r2, test_r2, train_mse, test_mse = model_performance()
 
 st.title('🤖 Scikit-learn - A minimum working example')
 
-st.write('Actual y')
-st.write(y_train)
+col1, col2 = st.columns(2)
 
-st.write('Predicted y')
-st.write(y_train_pred)
+with col1:
+  st.write('Actual y')
+  st.write(y_train)
 
-st.write(X)
-
-st.write(y)
+with col2:
+  st.write('Predicted y')
+  st.write(y_train_pred)
+ 
 st.write('Train $R^2$', train_r2)
 st.write('Test $R^2$', test_r2)

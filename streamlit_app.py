@@ -45,6 +45,7 @@ train_r2, test_r2, train_mse, test_mse = model_performance()
 
 st.title('🤖 Scikit-learn - A minimum working example')
 
+st.header('Actual versus predicted y')
 col1, col2 = st.columns(2)
 
 with col1:
@@ -54,6 +55,7 @@ with col1:
 with col2:
   st.write('Predicted y')
   st.write(y_train_pred)
- 
+
+st.header('Model performance metrics')
 st.write('Train $R^2$', train_r2)
 st.write('Test $R^2$', test_r2)

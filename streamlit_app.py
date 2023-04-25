@@ -57,5 +57,7 @@ with col2:
 
 with col3:
   st.header('Performance')
-  st.write('Train $R^2$', train_r2)
-  st.write('Test $R^2$', test_r2)
+  st.metric(label="Train $R^2$", value=train_r2, delta="0")
+  st.metric(label="Test $R^2$", value=test_r2, delta="0")
+  #st.write('Train $R^2$', train_r2)
+  #st.write('Test $R^2$', test_r2)
